@@ -139,7 +139,7 @@ function ReportDetailsPage(props) {
         <ScreenWrapper>
             <FullPageNotFoundView shouldShow={_.isEmpty(props.report)}>
                 <HeaderWithBackButton title={props.translate('common.details')} />
-                <ScrollView style={[styles.flex1]}>
+                <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1]}>
                     <View style={styles.reportDetailsTitleContainer}>
                         <View style={styles.mb3}>
                             <RoomHeaderAvatars icons={ReportUtils.getIcons(props.report, props.personalDetails, props.policies)} />

@@ -165,7 +165,7 @@ class KeyboardShortcutsModal extends React.Component {
                     shouldShowBackButton={false}
                     onCloseButtonPress={KeyboardShortcutsActions.hideKeyboardShortcutModal}
                 />
-                <ScrollView style={[styles.p5, styles.pt0]}>
+                <ScrollView showsVerticalScrollIndicator={false} style={[styles.p5, styles.pt0]}>
                     <Text style={styles.mb5}>{this.props.translate('keyboardShortcutModal.subtitle')}</Text>
                     <View style={[styles.keyboardShortcutTableWrapper]}>
                         <View style={[styles.alignItemsCenter, styles.keyboardShortcutTableContainer]}>

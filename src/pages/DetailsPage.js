@@ -138,7 +138,7 @@ function DetailsPage(props) {
                     style={[styles.containerWithSpaceBetween]}
                 >
                     {details ? (
-                        <ScrollView>
+                        <ScrollView showsVerticalScrollIndicator={false}>
                             <View style={styles.avatarSectionWrapper}>
                                 <AttachmentModal
                                     headerTitle={details.displayName}

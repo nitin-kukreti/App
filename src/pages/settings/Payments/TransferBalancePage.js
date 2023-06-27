@@ -189,6 +189,7 @@ class TransferBalancePage extends React.Component {
                         <CurrentWalletBalance balanceStyles={[styles.transferBalanceBalance]} />
                     </View>
                     <ScrollView
+                        showsVerticalScrollIndicator={false}
                         style={styles.flexGrow0}
                         contentContainerStyle={styles.pv5}
                     >

@@ -143,7 +143,8 @@ function FlagCommentPage(props) {
             {({safeAreaPaddingBottomStyle}) => (
                 <>
                     <HeaderWithBackButton title={props.translate('reportActionContextMenu.flagAsOffensive')} />
-                    <ScrollView
+                    <ScrollView 
+                        showsVerticalScrollIndicator={false}
                         contentContainerStyle={safeAreaPaddingBottomStyle}
                         style={styles.settingsPageBackground}
                     >

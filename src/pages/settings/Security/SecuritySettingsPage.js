@@ -67,7 +67,7 @@ function SecuritySettingsPage(props) {
                 title={props.translate('initialSettingsPage.security')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS)}
             />
-            <ScrollView contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween]}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween]}>
                 <View style={[styles.flex1]}>
                     {_.map(menuItems, (item) => (
                         <MenuItem

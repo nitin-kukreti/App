@@ -61,7 +61,7 @@ function LoungeAccessPage(props) {
                         title={props.translate('loungeAccessPage.loungeAccess')}
                         onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS)}
                     />
-                    <ScrollView contentContainerStyle={safeAreaPaddingBottomStyle}>
+                    <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={safeAreaPaddingBottomStyle}>
                         <View style={illustrationStyle}>
                             <Illustrations.Lounge />
                         </View>

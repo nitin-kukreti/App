@@ -93,7 +93,7 @@ function PersonalDetailsInitialPage(props) {
                 title={props.translate('privatePersonalDetails.personalDetails')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_PROFILE)}
             />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.flex1}>
                     <View style={[styles.ph5, styles.mb5]}>
                         <Text>{props.translate('privatePersonalDetails.privateDataMessage')}</Text>

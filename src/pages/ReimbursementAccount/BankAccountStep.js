@@ -100,7 +100,7 @@ function BankAccountStep(props) {
                     shouldShowGetAssistanceButton
                     guidesCallTaskID={CONST.GUIDES_CALL_TASK_IDS.WORKSPACE_BANK_ACCOUNT}
                 />
-                <ScrollView style={[styles.flex1]}>
+                <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1]}>
                     <Section
                         icon={Illustrations.MoneyWings}
                         title={props.translate('workspace.bankAccount.streamlinePayments')}

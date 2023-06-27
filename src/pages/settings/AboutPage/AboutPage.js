@@ -76,7 +76,7 @@ function AboutPage(props) {
                         title={props.translate('initialSettingsPage.about')}
                         onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS)}
                     />
-                    <ScrollView contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween, safeAreaPaddingBottomStyle]}>
+                    <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween, safeAreaPaddingBottomStyle]}>
                         <View style={[styles.flex1]}>
                             <View style={styles.pageWrapper}>
                                 <View style={[styles.settingsPageBody, styles.mb6, styles.alignItemsCenter]}>

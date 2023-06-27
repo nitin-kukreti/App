@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {View, ScrollView} from 'react-native';
-import {withOnyx} from 'react-native-onyx';
+import React, { Component } from 'react';
+import { View, ScrollView } from 'react-native';
+import { withOnyx } from 'react-native-onyx';
 import PropTypes from 'prop-types';
 import _ from 'underscore';
 import HeaderWithBackButton from '../../components/HeaderWithBackButton';
@@ -12,7 +12,7 @@ import ONYXKEYS from '../../ONYXKEYS';
 import Button from '../../components/Button';
 import * as ValidationUtils from '../../libs/ValidationUtils';
 import * as User from '../../libs/actions/User';
-import withLocalize, {withLocalizePropTypes} from '../../components/withLocalize';
+import withLocalize, { withLocalizePropTypes } from '../../components/withLocalize';
 import compose from '../../libs/compose';
 import FixedFooter from '../../components/FixedFooter';
 import TextInput from '../../components/TextInput';
@@ -98,7 +98,7 @@ class PasswordPage extends Component {
 
         this.setState((prevState) => ({
             [field]: value,
-            errors: {...prevState.errors, ...errorsToReset},
+            errors: { ...prevState.errors, ...errorsToReset },
         }));
     }
 
@@ -120,7 +120,7 @@ class PasswordPage extends Component {
             errors.newPasswordSameAsOld = true;
         }
 
-        this.setState({errors});
+        this.setState({ errors });
         return _.size(errors) === 0;
     }
 
@@ -161,6 +161,7 @@ class PasswordPage extends Component {
                 ) : (
                     <>
                         <ScrollView
+                            showsVerticalScrollIndicator={false}
                             style={styles.flex1}
                             contentContainerStyle={styles.p5}
                             // Allow the user to click show password while password input is focused.

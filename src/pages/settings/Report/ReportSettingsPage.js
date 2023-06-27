@@ -108,7 +108,7 @@ class ReportSettingsPage extends Component {
                         title={this.props.translate('common.settings')}
                         onBackButtonPress={() => Navigation.goBack(ROUTES.getReportDetailsRoute(this.props.report.reportID))}
                     />
-                    <ScrollView style={[styles.flex1]}>
+                    <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1]}>
                         <MenuItemWithTopDescription
                             shouldShowRightIcon
                             title={notificationPreference}

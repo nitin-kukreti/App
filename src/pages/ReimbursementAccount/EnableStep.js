@@ -63,7 +63,7 @@ function EnableStep(props) {
                 shouldShowGetAssistanceButton
                 guidesCallTaskID={CONST.GUIDES_CALL_TASK_IDS.WORKSPACE_BANK_ACCOUNT}
             />
-            <ScrollView style={[styles.flex1]}>
+            <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1]}>
                 <Section
                     title={!isUsingExpensifyCard ? props.translate('workspace.bankAccount.oneMoreThing') : props.translate('workspace.bankAccount.allSet')}
                     icon={!isUsingExpensifyCard ? Illustrations.ConciergeNew : Illustrations.ThumbsUpStars}

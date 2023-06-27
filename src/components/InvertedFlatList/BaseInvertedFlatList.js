@@ -129,6 +129,7 @@ class BaseInvertedFlatList extends Component {
     render() {
         return (
             <FlatList
+                showsVerticalScrollIndicator={false}
                 // eslint-disable-next-line react/jsx-props-no-spreading
                 {...this.props}
                 ref={this.props.innerRef}

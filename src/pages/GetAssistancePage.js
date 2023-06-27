@@ -83,7 +83,7 @@ function GetAssistancePage(props) {
                 title={props.translate('getAssistancePage.title')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_WORKSPACES)}
             />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Section
                     title={props.translate('getAssistancePage.subtitle')}
                     icon={Illustrations.ConciergeNew}

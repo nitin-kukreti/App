@@ -103,6 +103,7 @@ function VerifyPage(props) {
             />
             <FullPageOfflineBlockingView>
                 <ScrollView
+                    showsVerticalScrollIndicator={false}
                     style={styles.mb5}
                     keyboardShouldPersistTaps="handled"
                 >

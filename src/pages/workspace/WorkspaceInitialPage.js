@@ -189,7 +189,7 @@ function WorkspaceInitialPage(props) {
                         threeDotsAnchorPosition={styles.threeDotsPopoverOffset(props.windowWidth)}
                         onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_WORKSPACES)}
                     />
-                    <ScrollView contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween, safeAreaPaddingBottomStyle]}>
+                    <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={[styles.flexGrow1, styles.flexColumn, styles.justifyContentBetween, safeAreaPaddingBottomStyle]}>
                         <OfflineWithFeedback
                             pendingAction={policy.pendingAction}
                             onClose={() => dismissError(policy.id)}

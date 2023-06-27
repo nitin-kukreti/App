@@ -56,6 +56,7 @@ function TermsStep(props) {
             <HeaderWithBackButton title={props.translate('termsStep.headerTitle')} />
 
             <ScrollView
+                showsVerticalScrollIndicator={false}
                 style={styles.flex1}
                 contentContainerStyle={styles.ph5}
             >

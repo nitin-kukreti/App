@@ -39,6 +39,7 @@ const propTypes = {
 function SignInPageContent(props) {
     return (
         <ScrollView
+            showsVerticalScrollIndicator={false}
             contentContainerStyle={[styles.flex1, styles.signInPageLeftContainer]}
             keyboardShouldPersistTaps="handled"
             style={[!props.isSmallScreenWidth && styles.signInPageLeftContainerWide, styles.flex1]}

@@ -97,6 +97,7 @@ class PDFPasswordForm extends Component {
             <>
                 {this.state.shouldShowForm ? (
                     <ScrollView
+                        showsVerticalScrollIndicator={false}
                         keyboardShouldPersistTaps="handled"
                         style={containerStyle}
                         contentContainerStyle={styles.p5}

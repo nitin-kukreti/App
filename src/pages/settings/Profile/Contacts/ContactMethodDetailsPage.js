@@ -208,7 +208,7 @@ class ContactMethodDetailsPage extends Component {
                     title={formattedContactMethod}
                     onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_CONTACT_METHODS)}
                 />
-                <ScrollView keyboardShouldPersistTaps="handled">
+                <ScrollView showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
                     <ConfirmModal
                         title={this.props.translate('contacts.removeContactMethod')}
                         onConfirm={this.confirmDeleteAndHideModal}

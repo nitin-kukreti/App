@@ -204,6 +204,7 @@ function AddressSearch(props) {
             horizontal
             contentContainerStyle={styles.flex1}
             scrollEnabled={false}
+            showsVerticalScrollIndicator={false}
             // keyboardShouldPersistTaps="always" is required for Android native,
             // otherwise tapping on a result doesn't do anything. More information
             // here: https://github.com/FaridSafi/react-native-google-places-autocomplete#use-inside-a-scrollview-or-flatlist

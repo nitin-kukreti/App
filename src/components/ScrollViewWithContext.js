@@ -38,6 +38,7 @@ class ScrollViewWithContext extends React.Component {
         return (
             <ScrollView
                 // eslint-disable-next-line react/jsx-props-no-spreading
+                showsVerticalScrollIndicator={false}
                 {...this.props}
                 ref={this.scrollViewRef}
                 onScroll={this.setContextScrollPosition}

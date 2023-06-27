@@ -68,7 +68,7 @@ function CodesPage(props) {
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_SECURITY)}
             />
             <FullPageOfflineBlockingView>
-                <ScrollView>
+                <ScrollView showsVerticalScrollIndicator={false}>
                     <Section
                         title={props.translate('twoFactorAuth.keepCodesSafe')}
                         icon={Illustrations.ShieldYellow}

@@ -72,6 +72,7 @@ function SignInPageLayout(props) {
                         {props.children}
                     </SignInPageContent>
                     <ScrollView
+                        showsVerticalScrollIndicator={false}
                         style={[styles.flex1, StyleUtils.getBackgroundColorStyle(themeColors.signInPage)]}
                         contentContainerStyle={[styles.flex1]}
                         ref={scrollViewRef}
@@ -107,6 +108,7 @@ function SignInPageLayout(props) {
                 </View>
             ) : (
                 <ScrollView
+                    showsVerticalScrollIndicator={false}
                     contentContainerStyle={scrollViewContentContainerStyles}
                     keyboardShouldPersistTaps="handled"
                     ref={scrollViewRef}

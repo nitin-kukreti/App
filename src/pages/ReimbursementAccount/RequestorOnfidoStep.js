@@ -53,7 +53,7 @@ class RequestorOnfidoStep extends React.Component {
                     onBackButtonPress={this.props.onBackButtonPress}
                 />
                 <FullPageOfflineBlockingView>
-                    <ScrollView contentContainerStyle={styles.flex1}>
+                    <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.flex1}>
                         <Onfido
                             sdkToken={this.props.onfidoToken}
                             onUserExit={() => {

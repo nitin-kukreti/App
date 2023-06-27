@@ -393,6 +393,7 @@ function Form(props) {
             {({safeAreaPaddingBottomStyle}) =>
                 props.scrollContextEnabled ? (
                     <ScrollViewWithContext
+            
                         style={[styles.w100, styles.flex1]}
                         contentContainerStyle={styles.flexGrow1}
                         keyboardShouldPersistTaps="handled"
@@ -402,6 +403,7 @@ function Form(props) {
                     </ScrollViewWithContext>
                 ) : (
                     <ScrollView
+                        showsVerticalScrollIndicator={false}
                         style={[styles.w100, styles.flex1]}
                         contentContainerStyle={styles.flexGrow1}
                         keyboardShouldPersistTaps="handled"

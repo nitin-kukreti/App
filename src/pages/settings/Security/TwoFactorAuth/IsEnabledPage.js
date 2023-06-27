@@ -23,7 +23,7 @@ function IsEnabledPage(props) {
                 title={props.translate('twoFactorAuth.headerTitle')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_SECURITY)}
             />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Section
                     title={props.translate('twoFactorAuth.twoFactorAuthEnabled')}
                     icon={Illustrations.ShieldYellow}

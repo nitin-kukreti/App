@@ -31,6 +31,7 @@ const BasePreRenderer = forwardRef((props, ref) => {
 
     return (
         <ScrollView
+            showsVerticalScrollIndicator={false}
             ref={ref}
             horizontal
             style={[styles.mv2, styles.overscrollBehaviorNone]}

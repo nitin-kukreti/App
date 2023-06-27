@@ -191,7 +191,7 @@ class ValidationStep extends React.Component {
                     </Form>
                 )}
                 {isVerifying && (
-                    <ScrollView style={[styles.flex1]}>
+                    <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1]}>
                         <Section
                             title={this.props.translate('workspace.bankAccount.letsFinishInChat')}
                             icon={Illustrations.ConciergeBubble}

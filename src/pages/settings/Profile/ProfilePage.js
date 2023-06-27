@@ -90,7 +90,7 @@ function ProfilePage(props) {
                 title={props.translate('common.profile')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS)}
             />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <AvatarWithImagePicker
                     isUsingDefaultAvatar={UserUtils.isDefaultAvatar(lodashGet(currentUserDetails, 'avatar', ''))}
                     source={UserUtils.getAvatar(lodashGet(currentUserDetails, 'avatar', ''), lodashGet(currentUserDetails, 'accountID', ''))}

@@ -116,7 +116,7 @@ function ContactMethodsPage(props) {
                 title={props.translate('contacts.contactMethods')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS_PROFILE)}
             />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={[styles.ph5, styles.mv3, styles.flexRow, styles.flexWrap]}>
                     <Text numberOfLines={100}>
                         {props.translate('contacts.helpTextBeforeEmail')}

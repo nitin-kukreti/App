@@ -55,7 +55,7 @@ function PreferencesPage(props) {
                 title={props.translate('common.preferences')}
                 onBackButtonPress={() => Navigation.goBack(ROUTES.SETTINGS)}
             />
-            <ScrollView style={[styles.flex1, styles.mt3]}>
+            <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1, styles.mt3]}>
                 <View style={styles.mb6}>
                     <Text
                         style={[styles.textLabelSupporting, styles.mb2, styles.ml5, styles.mr8]}

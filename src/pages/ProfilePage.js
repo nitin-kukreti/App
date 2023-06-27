@@ -141,7 +141,7 @@ function ProfilePage(props) {
                 style={[styles.containerWithSpaceBetween]}
             >
                 {hasMinimumDetails && (
-                    <ScrollView>
+                    <ScrollView showsVerticalScrollIndicator={false}>
                         <View style={styles.avatarSectionWrapper}>
                             <AttachmentModal
                                 headerTitle={displayName}

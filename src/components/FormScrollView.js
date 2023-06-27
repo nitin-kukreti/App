@@ -10,6 +10,7 @@ const propTypes = {
 
 const FormScrollView = React.forwardRef((props, ref) => (
     <ScrollView
+        showsVerticalScrollIndicator={false}
         style={[styles.w100, styles.flex1]}
         ref={ref}
         contentContainerStyle={styles.flexGrow1}

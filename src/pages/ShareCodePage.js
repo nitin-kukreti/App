@@ -59,7 +59,7 @@ class ShareCodePage extends React.Component {
                     onBackButtonPress={() => Navigation.goBack(isReport ? ROUTES.getReportDetailsRoute(this.props.report.reportID) : ROUTES.SETTINGS)}
                 />
 
-                <ScrollView style={[styles.flex1, styles.mt3]}>
+                <ScrollView showsVerticalScrollIndicator={false} style={[styles.flex1, styles.mt3]}>
                     <View style={styles.shareCodePage}>
                         <QRShareWithDownload
                             ref={this.qrCodeRef}

@@ -192,7 +192,7 @@ class WorkspacesListPage extends Component {
                         subtitle={this.props.translate('workspace.emptyWorkspace.subtitle')}
                     />
                 ) : (
-                    <ScrollView style={styles.flex1}>{_.map(workspaces, (item, index) => this.getMenuItem(item, index))}</ScrollView>
+                    <ScrollView showsVerticalScrollIndicator={false} style={styles.flex1}>{_.map(workspaces, (item, index) => this.getMenuItem(item, index))}</ScrollView>
                 )}
                 <FixedFooter style={[styles.flexGrow0]}>
                     <Button
